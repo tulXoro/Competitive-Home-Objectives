@@ -205,6 +205,7 @@ function newElement() {
   var inputValue = document.getElementById("playerName").value;
   var t = document.createTextNode(inputValue);
   li.appendChild(t);
+  console.log(playerList);
   if (inputValue === '') {
     alert("You must type something!");
   } else if(playerList.some(player => player.name === inputValue)) {
@@ -225,7 +226,9 @@ function newElement() {
     close[i].onclick = function() {
       var div = this.parentElement;
       div.style.display = "none";
-      playerList[i] = undefined;
+      console.log(playerList);
+      playerList.splice(i);
+      console.log(playerList);
       playerCount--;
     }
   }
