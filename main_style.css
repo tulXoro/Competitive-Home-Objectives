@@ -1,0 +1,353 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap');
+
+html{
+  background-color: rgb(233, 195, 69);
+  overflow-x: hidden;
+  background-color: #f29e03;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 100 100'%3E%3Crect x='0' y='0' width='46' height='46' fill-opacity='0.6' fill='%23ffa61d'/%3E%3C/svg%3E");
+  /* display: grid; */
+}
+
+#appBody{
+  visibility: hidden;
+}
+#claimedBy
+{
+  min-width:100px;
+}
+#objectivesCurrentPoints
+{
+  min-width: 140px;
+}
+#currentList{
+  margin-top: -80px;
+}
+#playerList
+ {
+ /* margin:5px; 
+  padding:5px;  */
+  /* width: 500px;  */
+  height: 150px; 
+  overflow: auto; 
+  /* margin-top: -60px; */
+  text-align:justify; 
+  padding-top: 25px;
+}
+
+body{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap:40px;
+}
+h2{
+  text-align: center;
+  font-family: 'Work Sans', sans-serif;
+}
+p{
+  font-family: 'Work Sans', sans-serif;
+}
+#outerGrid{
+  /* width: 100%; */
+  position: absolute;
+  /*width: 50vw;*/
+  width:650px;
+  top:200px;
+  /* background-color: pink; */
+  grid-column: 1/4;
+  visibility: visible;
+  /*display: flex; */
+  /* justify-content: center; */
+  /* background-CO */
+  justify-self: center;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+#startingScreen
+{
+  /* width:25%; */
+  /* width: 100vw; */
+  text-align:center;
+  background-color: white;
+  border:2px solid black;
+  border-radius: 10px;
+  grid-column: 2;
+  display:grid;
+  grid-template-rows: 1fr 1fr 80px;
+  grid-gap: 20px;
+  margin-top: 20px;
+}
+
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the list items */
+ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  list-style-type: none;
+  background: #eee;
+  font-size: 18px;
+  transition: 0.2s;
+  /* make the list items unselectable */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+#heading
+{
+  visibility: visible;
+}
+.close {
+  text-align: center;
+  border-left:3px solid white;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height:100%;
+  width:40px;
+  font-size: 40px;
+  /* background-color: lime; */
+}
+
+.close:hover {
+  background-color: #f44336;
+  color: white;
+}
+/* Set all odd list items to a different color (zebra-stripes) */
+#objectivesCurrentPoints li {
+    /* background-color: pink; */
+    /*text-decoration: underline;*/
+    vertical-align: middle;
+    list-style-type: none;
+}
+#objectivesCurrentPoints li:hover {
+    background-color: rgb(211, 211, 211);
+}
+ol{
+  /* background-color: pink; */
+  position: relative;
+ 
+  top:0px;
+  /* padding:10px; */
+
+  /* height: 40px; */
+}
+
+ul li:nth-child(odd) {
+  background: #f9f9f9;
+}
+
+li
+{
+
+  /* background-color: lime; */
+  height: 40px;
+}
+/* Darker background-color on hover */
+ul li:hover {
+  background: #ddd;
+}
+
+.addPlayerButton {
+  padding: 10px;
+  width: 30px;
+  background: #ffffff;
+  color: #555;
+  /* float: right; */
+  /* text-align: center; */
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 5px;
+}
+.addPlayerButton:hover {
+  background-color: rgb(238, 135, 135);
+}
+
+ul
+{
+  text-align: left;
+}
+
+#objectivesCurrent
+{
+  min-width: 40px;
+  text-align: center;
+  list-style-type: none;
+}
+#addPlayerDiv{
+  grid-row: 1;
+  font-family: 'Work Sans', sans-serif;
+  padding-top: 15px;
+}
+
+#currentPlayers{
+  grid-row: 2;
+  font-family: 'Work Sans', sans-serif;
+}
+
+#startButton {
+  justify-self: center;
+  width: 180px;
+  height: 60px;
+  border-radius: 60px;
+  background: rgb(144, 218, 129);
+  background: -moz-radial-gradient(circle, rgba(42,201,50,1) 0%, rgba(0,145,19,1) 100%);
+  background: -webkit-radial-gradient(circle, rgba(42,201,50,1) 0%, rgba(0,145,19,1) 100%);
+  background: radial-gradient(circle, rgba(42,201,50,1) 0%, rgba(0,145,19,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#d29d42",endColorstr="#bc0000",GradientType=1);
+  grid-row: 3;
+  font-family: 'Work Sans', sans-serif;
+}
+/* #startButton:hover
+{
+  background: rgb(188,0,0);
+  background: -moz-radial-gradient(circle, rgba(188,0,0,1) 0%, rgba(210,157,66,1) 100%);
+  background: -webkit-radial-gradient(circle, rgba(188,0,0,1) 0%, rgba(210,157,66,1) 100%);
+  background: radial-gradient(circle, rgba(188,0,0,1) 0%, rgba(210,157,66,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#bc0000",endColorstr="#d29d42",GradientType=1);
+  transition: 2s;
+} */
+
+
+
+/* BODY CSS */
+
+#heading{
+  grid-column: 1/-1;
+  grid-row: 1;
+  text-align:center;
+  font-family: 'Work Sans', sans-serif;
+  margin-top: 50px;
+  margin-bottom: -30px;
+}
+
+#instructions{
+  margin-top: 21px;
+}
+
+li {
+  /*border-bottom: 1px solid black; */
+  font-family: 'Work Sans', sans-serif;
+}
+/*li:last {
+  border-bottom: none 
+}*/
+
+
+.left_box{
+  font-family: 'Work Sans', sans-serif;
+  border: 2px solid black;
+  border-radius: 10px;
+  grid-column: 1;
+  grid-row: 2/4;
+  background-color: white;
+  margin: 20px;
+  padding-top: 15px;
+}
+
+#currentObjTitle{
+  text-align:center;
+}
+#objectivesCurrent{
+  list-style-type: none;
+}
+
+
+
+.middle_box{
+  font-family: 'Work Sans', sans-serif;
+  border: 2px solid black;
+  border-radius: 10px;
+  grid-column: 2;
+  grid-row: 2/4;
+  background-color: white;
+  margin: 20px;
+  padding-top: 15px;
+}
+
+#completedObjTitle{
+  text-align: center;
+}
+#completeObj{
+  list-style-type: none;
+  text-align:center;
+  margin-left: -50px;
+}
+/*#completeObj li{
+text-decoration: underline;
+}*/
+
+
+.right_box{
+  font-family: 'Work Sans', sans-serif;
+  border: 2px solid black;
+  border-radius: 10px;
+  grid-column: 3;
+  grid-row: 2/4;
+  background-color: white;
+  margin: 20px;
+  padding-top: 15px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 60px 1fr;
+}
+
+#leaderboardTitle{
+  grid-column: 1/3;
+}
+#LeaderBoards{
+  grid-column:1;
+  text-align: center;
+}
+#scoreLeaderboards{
+  list-style-type: none;
+  grid-column: 2;
+  text-align: center;
+}
+#instructions {
+  visibility: hidden;
+}
+
+
+
+
+
+
+@media screen and (max-width: 950px) { 
+  body{
+    display:block;
+    /* margin-top:450px; */
+    width:90vh;
+  }
+  #outerGrid{
+    /* display:block; */
+    /* max-width: 200px;width */
+    width:90vh;
+    position: absolute;
+    margin-top:10px;
+    min-width: 0px;
+    
+
+  }
+#appBody{
+  margin-top:-40px;
+}
+
+  #heading
+  {
+    text-align: center;
+    position: relative;
+  }
+
+}

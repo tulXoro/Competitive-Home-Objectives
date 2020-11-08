@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>CutieHack Entry></title>
+	<meta charset="utf-8">
+  <link rel="icon" href="Images/cutieLogo.svg" type="image/x-icon"><!--Adds browser icon-->
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>repl.it</title>
+	<link href="main_style.css" rel="stylesheet" type="text/css" />
+</head>
+
+
+<div id="outerGrid">
+	<div id="startingScreen">
+		<div id="addPlayerDiv" class="header">
+			<h2 style="margin:5px">Add Player</h2>
+			<input type="text" id="playerName" placeholder="Ex. John Doe">
+      <span onclick="newElement()" class="addPlayerButton">Add</span>
+    </div>
+
+    <div id="currentList">
+      <h2 id="currentPlayers">Current Players</h2>
+      <ul id="playerList">
+       <!-- <li>Temp Placeholder</li> -->
+      </ul>
+    </div>
+
+    <button onClick="startApp()" id="startButton" class="start_button">START</button>
+
+  </div>
+</div>
+
+
+<div id="heading">
+    <h1 class="title">Competitive Home Objectives</h1>
+
+    <p id="creators"> Created by: Aaron Lim, Tim Lor, Edgarventura Melendrez, and Ethan Nelson </p>
+    1. Add in the people who will be doing all of the busy work, then press start! <br> 2. Set up a timer! Decide how long you want to play!
+    <p id="instructions"> 3. To claim a task, complete it before anyone else, then click on the task and type in your name!<br>4. The points will be added onto your score!<br>5. When the timer ends, the person with the highest score wins!</p>
+    <bR><br>
+</div>
+  
+<body id="appBody">
+  <script src="script.js"></script>
+    <!-- <script src="Objectives.js"></script> -->
+
+  
+
+<!--Current Objectives-->
+  <div class ="left_box">
+    <h2 id="currentObjTitle">Current Objectives</h2>
+    <ol id="objectivesCurrentPoints"><strong>Objective<br></strong></ol>
+  </div>
+
+<!--Completed Objective-->
+  <div class ="middle_box">
+    <h2 id="completedObjTitle">Completed Objectives</h2>
+    <ol id="completeObj"><strong>Objective<br></strong>
+      <!-- <li> Objective </li> -->
+    </ol>
+  </div>
+
+<!--Leaderboard Box-->
+  <div class ="right_box">
+    <h2 id="leaderboardTitle">Leaderboards</h2>
+    <ol id="LeaderBoards"><strong>Name</strong>
+      <!-- <li> Temp </li> -->
+    </ol>
+    <ol id="scoreLeaderboards"><strong>Score</strong>
+      <!-- <li> Temp </li> -->
+    </ol>
+  </div>
+  
+</body>
+
+</html>
