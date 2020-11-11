@@ -11,3 +11,5 @@ The main idea behind this project was to compete against other people in your ho
 3) Click "start" and start the timer.
 4) Complete the task physically before you mark the task as complete on the website.
 5) Complete as many objectives as possible to win.
+
+Main website: http://www.guestsarecoming.xyz/
